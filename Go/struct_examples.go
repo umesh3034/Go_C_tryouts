@@ -115,4 +115,17 @@ func main() {
 	fmt.Println("Age:", p3.age)
 	fmt.Println("City:", p3.city)   //city is promoted field
 	fmt.Println("State:", p3.state) //state is promoted field
+
+	type name struct {
+		firstName string
+		lastName  string
+	}
+
+	name1 := name{"Steve", "Jobs"}
+	name2 := name{"Steve", "Jobs"}
+	if name1 == name2 {
+		fmt.Println("name1 and name2 are equal")
+	} else {
+		fmt.Println("name1 and name2 are not equal")
+	}
 }
