@@ -32,4 +32,6 @@ func main() {
 	fmt.Printf("\n\nEmployee age before change: %d", e.age)
 	(&e).changeAge(51)
 	fmt.Printf("\nEmployee age after change: %d", e.age)
+	e.changeAge(52)
+	fmt.Printf("\nEmployee age after change 2 --: %d\n", e.age)
 }
